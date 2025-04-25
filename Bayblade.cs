@@ -16,6 +16,7 @@ using static Nautilus.Assets.PrefabTemplates.FabricatorTemplate;
 using UnityEngine.Assertions;
 using VehicleFramework.Assets;
 using VehicleFramework.Engines;
+using RoyalCommonalities.Items.Materials;
 
 namespace AmarokBayblade
 {
@@ -212,10 +213,10 @@ namespace AmarokBayblade
             get
             {
                 Dictionary<TechType, int> recipe = new Dictionary<TechType, int>();
-                recipe.Add(TechType.TitaniumIngot, 1);
+                recipe.Add(ChromaticIngot.Info.TechType, 1);
+                recipe.Add(EnhancedWiringKit.Info.TechType, 2);
+                recipe.Add(LaminatedGlass.Info.TechType, 1);
                 recipe.Add(TechType.PrecursorIonCrystal, 1);
-                recipe.Add(TechType.CopperWire, 2);
-                recipe.Add(TechType.AdvancedWiringKit, 2);
                 return recipe;
 
             }
@@ -276,7 +277,7 @@ namespace AmarokBayblade
 
         public override int CrushDepthUpgrade3 => 3500;
 
-        public override int MaxHealth => 6000;
+        public override int MaxHealth => 3000;
 
         public override int Mass => 1200;
         public override int NumModules => 5;

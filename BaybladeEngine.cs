@@ -11,12 +11,12 @@ namespace AmarokBayblade
     public class BaybladeEngine : VehicleFramework.Engines.ModVehicleEngine
     {
 
-        protected override float FORWARD_TOP_SPEED => 2100;
-        protected override float REVERSE_TOP_SPEED => 1400;
-        protected override float STRAFE_MAX_SPEED => 1400;
-        protected override float VERT_MAX_SPEED => 1400;
+        protected override float FORWARD_TOP_SPEED => 2900;
+        protected override float REVERSE_TOP_SPEED => 2100;
+        protected override float STRAFE_MAX_SPEED => 1800;
+        protected override float VERT_MAX_SPEED => 1800;
 
-        protected override float FORWARD_ACCEL => FORWARD_TOP_SPEED / 2f;
+        protected override float FORWARD_ACCEL => FORWARD_TOP_SPEED / 4f;
         protected override float REVERSE_ACCEL => REVERSE_TOP_SPEED / 2f;
         protected override float STRAFE_ACCEL => STRAFE_MAX_SPEED / 2f;
         protected override float VERT_ACCEL => VERT_MAX_SPEED / 2;

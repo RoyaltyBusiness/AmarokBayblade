@@ -28,6 +28,7 @@ namespace AmarokBayblade
     [BepInPlugin("com.royalty.subnautica.AmarokBayblade.mod", "Amarok", "0.8.0")]
     [BepInDependency("com.mikjaw.subnautica.vehicleframework.mod")]
     [BepInDependency("com.snmodding.nautilus")]
+    [BepInDependency("com.royalty.subnautica.RoyalCommonalities.mod")]
 
     public class MainPatcher : BaseUnityPlugin
     {
